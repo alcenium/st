@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "FiraMono Nerd Font:pixelsize=16:autohint=true";
+static char *font = "FiraCode Nerd Font:pixelsize=14:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -93,35 +93,38 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
+/* bg opacity */
+float alpha = 0.8;
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#272822",	// Black
-	"#F92672",	// Red
-	"#A6E22E",	// Green
-	"#F4BF75",	// Yellow
-	"#66D9EF",	// Blue
-	"#AE81FF",	// Magenta
-	"#A1EFE4",	// Cyan
-	"#F8F8F2",	// White
+	"#000000", /* black */
+	"#fd721f", /* darkred */
+	"#15bb84", /* darkgreen */
+	"#fd971f", /* orange */
+	"#59a5fe", /* darkblue */
+	"#8795fa", /* purple */
+	"#88c0d0", /* cyan */
+	"#dedede", /* white */
 
 	/* 8 bright colors */
-	"#75715E",	//Bright Black 
-	"#F92672",	//Bright Red 
-	"#A6E22E",	//Bright Green 
-	"#F4BF75",	//Bright Yellow 
-	"#66D9EF",	//Bright Blue 
-	"#AE81FF",	//Bright Magenta 
-	"#A1EFE4",	//Bright Cyan 
-	"#F9F8F5",	//Bright White 
+	"#555555", /* grey */
+	"#ff6c60", /* red */
+	"#7fffd4", /* green */
+	"#eedc82", /* yellow */
+	"#87cefa", /* blue */
+	"#fa87ce", /* magenta */
+	"#46d9ff", /* lightcyan */
+	"#ffffff", /* white */
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
 	"#555555",
-	"#F8F8F2", /* default foreground colour */
-	"#272822", /* default background colour */
+	"#ffffff", /* default foreground colour */
+	"#161a1f", /* default background colour */
 };
 
 
